@@ -1,7 +1,7 @@
-#include <stdio..h>
+#include <stdio.h>
 /**
  * main - Entry point
- * Description: This program prints the size of various types of computer it compiles and runs on.
+ * Description: This program prints the size of various types of computer..
  * Return: Always 0
  */
 int main(void)
