@@ -1,1 +1,2 @@
-#!/bin/bash 101-quote.c
+#!/bin/bash
+gcc -S -masm=intel $CFILE
