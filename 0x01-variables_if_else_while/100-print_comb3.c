@@ -6,18 +6,21 @@
  */
 int main(void)
 {
-	int tens, ones, twoDigits;
+	int tens, ones;
 
 	for (tens = 0; tens < 19; tens++)
+	{
 		for (ones = 0; ones < 10; ones++)
 		{
-			twoDigits = (tens * 10) + ones;
-			{
 			putchar('0' + tens);
 			putchar('0' + ones);
+			if (tens != 9 || ones != 9)
+			{
+			putchar(',');
 			putchar(' ');
-			putchar('\n');
 			}
 		}
+	}
+	putchar('\n');
 	return (0);
 }
