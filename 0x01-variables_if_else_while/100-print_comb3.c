@@ -10,11 +10,11 @@ int main(void)
 
 	for (tens = 0; tens <= 9; tens++)
 	{
-		for (ones = tens; ones <= 9; ones++)
+		for (ones = tens + 1; ones <= 9; ones++)
 		{
 			putchar('0' + tens);
 			putchar('0' + ones);
-			if (tens != 9 || ones != 9)
+			if (tens != 8 || ones != 9)
 			{
 			putchar(',');
 			putchar(' ');
