@@ -8,9 +8,9 @@ int main(void)
 {
 	int tens, ones;
 
-	for (tens = 0; tens < 19; tens++)
+	for (tens = 0; tens <= 9; tens++)
 	{
-		for (ones = 0; ones < 10; ones++)
+		for (ones = 0; ones <= 9; ones++)
 		{
 			putchar('0' + tens);
 			putchar('0' + ones);
