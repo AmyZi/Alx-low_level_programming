@@ -10,7 +10,7 @@ int main(void)
 
 	for (tens = 0; tens <= 9; tens++)
 	{
-		for (ones = 0; ones <= 9; ones++)
+		for (ones = tens; ones <= 9; ones++)
 		{
 			putchar('0' + tens);
 			putchar('0' + ones);
