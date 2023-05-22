@@ -20,10 +20,10 @@ int main(void)
 			{
 				if (a != b && b != c && c < b && b < a)
 				{
-					putchar('0' + a);
-					putchar('0' + b);
 					putchar('0' + c);
-					if (a + b + c != 9 + 8 + 7)
+					putchar('0' + b);
+					putchar('0' + a);
+					if (c != 9 || b != 8 || a != 7)
 					{
 						putchar(',');
 						putchar(' ');
