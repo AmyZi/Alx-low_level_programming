@@ -1,9 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
-*main - Entry point
+*print_alphabet - Prints alphabets to standard output
 *Description: Prints alphabets to std output
-*Return: Always 0
 */
 void print_alphabet(void)
 {
@@ -14,5 +13,4 @@ void print_alphabet(void)
 		_putchar('i');
 	}
 	_putchar('\n');
-	return (0);
 }
