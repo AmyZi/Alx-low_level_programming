@@ -5,9 +5,10 @@
   *@b: int to be added to a
   *Return: Result
   */
-int add(int, int)
+int add(int a, int b)
 {
 	int sum;
+
 	sum = a + b;
 	return (sum);
 }
