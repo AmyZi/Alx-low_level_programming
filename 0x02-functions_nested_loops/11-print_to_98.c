@@ -1,9 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
-  *prints_to_98 -prints natural number from n to 98
-  *@n: number to print from
-  */
+ *prints_to_98 - prints natural number from n to 98
+ *Desciption: Function prints n to 98
+ *@n: number to print from
+ *Return: prints n
+ */
 void print_to_98(int n)
 {
 	int i, j;
@@ -23,9 +25,9 @@ void print_to_98(int n)
 		for (j = n; j >= 98; j--)
 		{
 			if (j != 98)
-				 printf("%d, ", j);
+				printf("%d, ", j);
 			else if (j == 98)
-				 printf("%d\n", j);
+				printf("%d\n", j);
 		}
 	}
 }
