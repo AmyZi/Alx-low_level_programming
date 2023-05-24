@@ -1,4 +1,5 @@
- #include "main.h'
+ #include "main.h"
+#include <unistd.h>
 /**
 *times_table - Prints the 9 times table
 *Return: Void
@@ -9,7 +10,7 @@ void times_table(void)
 
 	for (i = 0; i <= 9; i++)
 	{
-		for (j = o; j <= 9; j++)
+		for (j = 0; j <= 9; j++)
 		{
 			result = i * j;
 			if (j == 0)
