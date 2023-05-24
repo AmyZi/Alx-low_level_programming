@@ -1,10 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *prints_to_98 - prints natural number from n to 98
- *Desciption: Function prints n to 98
+ *print_to_98 - orints all natural numbers from n to 98
  *@n: number to print from
- *Return: prints n
  */
 void print_to_98(int n)
 {
