@@ -5,7 +5,7 @@
   *@b: int to be added to a
   *Return: Result
   */
-int add(int, int);
+int add(int, int)
 {
 	int sum;
 	sum = a + b;
