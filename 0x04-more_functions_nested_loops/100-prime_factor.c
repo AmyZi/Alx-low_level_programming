@@ -15,6 +15,6 @@ int main(void)
 			x = x / py;
 		}
 	}
-	printf("ld\n", py);
+	printf("%ld\n", py);
 	return (0);
 }
