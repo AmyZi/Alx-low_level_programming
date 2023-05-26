@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-* print_diagonal - Prints a diagonal line of a specific length.
-* @n: The length of the diagonal line to be printed.
+* print_diagonal - Prints a diagonal line
+* @n: The length of the diagonal line
 *
 * Description: This function prints a diagonal line consisting
 * of a specified number of '\' characters, representing a diagonal
