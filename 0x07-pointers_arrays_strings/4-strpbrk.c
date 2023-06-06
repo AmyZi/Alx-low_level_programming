@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
   *_strpbrk - this function checks a substring and retunns number or null
   *@s: pointer to string
