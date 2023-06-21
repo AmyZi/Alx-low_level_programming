@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * print_square - Prints a square pattern of a specific size.
-* @size: The size of the square to be printed.
+* @n: The size of the square to be printed.
 *
 * Description: This function prints a square pattern
 */
