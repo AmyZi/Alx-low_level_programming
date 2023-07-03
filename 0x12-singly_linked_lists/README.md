@@ -1,6 +1,6 @@
-### This directory contains files from the 
+### This directory contains files from the . . . 
 # **0x12. C - Singly linked lists**
-### and they are:
+### Task and they are:
 
 
 ## 0-print_list.c
