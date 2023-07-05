@@ -2,7 +2,7 @@
 
 /**
   *listint_len - Calculate the number of elements
-  *@n: pointer to a list
+  *@h: pointer to a list
   *Return: Integer
   **/
 size_t listint_len(const listint_t *h)
