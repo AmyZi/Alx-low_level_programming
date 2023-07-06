@@ -1,18 +1,34 @@
 #include "lists.h"
+#include <stdlib.h>
 /**
-  * listint_len - Calculate the number of elements.
-  * @h: Pointer to a list.
-  * Return: Integer.
+  * delete_nodeint_at_index - Delete a node at a given positiion.
+  * @head: First node address.
+  * @index: Position of the node to delete.
+  * Return: If success (1).
   **/
-size_t listint_len(const listint_t *h)
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	const listint_t *tp;
-	unsigned int count = 0;
+	unsigned int i;
+	listint_t *current, *next;
 
-	tp = h;
-	while (tp)
+	if (head == NULL || *head == NULL)
+		return (-1);
+	if (index == 0)
 	{
-		count++;
-		tp = tp->next;
+		next = (*head)->next;
+		free(*head);
+		*head = next;
+		return (1);
 	}
-	return (count);
+	current = *head;
+	for (i = 0; i < index - 1; i++)
+	{
+		if (current->next == NULL)
+			return (-1);
+		current = current->next;
+	}
+	next = current->next;
+	current->next = next->next;
+	free(next);
+	return (1);
+}
