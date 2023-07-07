@@ -9,22 +9,26 @@
 **/
 size_t print_listint_safe(const listint_t *head)
 {
-const listint_t *slow = head;
-const listint_t *fast = head;
+const listint_t *current = head;
 size_t num = 0;
+const listint_t *visited[1024];
 
-while (slow != NULL && fast != NULL && fast->next != NULL)
+while (current != NULL)
 {
-num++;
-printf("[%p] %d\n", (void *)slow, slow->n);
-slow = slow->next;
-fast = fast->next->next;
-
-if (slow == fast)
+size_t i;
+for (i = 0; i < num; i++)
 {
-printf("-> [%p] %d\n", (void *)slow, slow->n);
-break;
+if (current == visited[i])
+{
+printf("Loop detected\n");
+return (num);
 }
+}
+visited[num++] = current;
+printf("[%p] %d\n", (void *)current, current->n);
+
+
+current = current->next;
 }
 
 return (num);
