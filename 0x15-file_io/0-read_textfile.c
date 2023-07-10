@@ -8,8 +8,9 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-	int i, y;
+	int i, y, j;
 	char *buf;
+	ssize_t nonWhitespaceCount = 0;
 
 	if (!filename)
 		return (0);
@@ -26,6 +27,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	buf[i] = '\0';
+	for (j = 0; j < i; j++)
+	{
+		if (!isspace(buf[j]))
+			nonWhitespaceCount++;
+	}
 	close(fd);
 	y = write(STDOUT_FILENO, buf, i);
 	if (y < 0)
@@ -34,5 +40,5 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	free(buf);
-	return (y);
+	return (nonWhitespaceCount);
 }
